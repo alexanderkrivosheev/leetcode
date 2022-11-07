@@ -8,7 +8,7 @@ using Xunit;
 
 namespace leetcode._1480_running_sum_id_array
 {
-    public static class Solution1Tests
+    public static class Tests
     {
         [Theory]
         [InlineData(new int[] { 1, 2, 3, 4 }, new int[] { 1, 3, 6, 10 })]

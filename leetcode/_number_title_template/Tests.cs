@@ -8,7 +8,7 @@ using Xunit;
 
 namespace leetcode._number_title_template
 {
-    public static class Solution1Tests
+    public static class Tests
     {
         [Fact]
         public static void Solution_Case_1()

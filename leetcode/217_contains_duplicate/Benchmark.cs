@@ -23,5 +23,12 @@ namespace leetcode._217_contains_duplicate
             Solution2 solution = new Solution2();
             solution.ContainsDuplicate(new int[] { 1, 2, 3, 4, 1 });
         }
+
+        [Benchmark]
+        public void Solution3()
+        {
+            Solution2 solution = new Solution2();
+            solution.ContainsDuplicate(new int[] { 1, 2, 3, 4, 1 });
+        }
     }
 }
