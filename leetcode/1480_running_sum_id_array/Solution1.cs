@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace leetcode._1480_Running_Sum_1d_Array
+namespace leetcode._1480_running_sum_id_array
 {
-    public static class Solution
+    public class Solution1
     {
-        public static int[] RunningSum(int[] nums)
+        public int[] RunningSum(int[] nums)
         {
             for (int i = 1; i < nums.Length; i++)
             {

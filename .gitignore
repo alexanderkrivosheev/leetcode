@@ -5,3 +5,4 @@
 /.vs
 /leetcode/bin/Debug/net6.0
 /leetcode/obj
+/leetcode/bin/Release/net6.0

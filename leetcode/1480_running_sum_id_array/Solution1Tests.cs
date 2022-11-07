@@ -6,18 +6,21 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace leetcode._1480_Running_Sum_1d_Array
+namespace leetcode._1480_running_sum_id_array
 {
-    public static class Tests
+    public static class Solution1Tests
     {
         [Theory]
         [InlineData(new int[] { 1, 2, 3, 4 }, new int[] { 1, 3, 6, 10 })]
         [InlineData(new int[] { 1,1,1,1 }, new int[] { 1, 2, 3, 4 })]
         public static void RunningSum_Case_1(int[] numbers, int[] expected)
         {
-            var result = Solution.RunningSum(numbers);
+            Solution1 solution = new Solution1();
+
+            var result = solution.RunningSum(numbers);
             
             result.Should().Equal(expected);            
         }      
     }
 }
+  
