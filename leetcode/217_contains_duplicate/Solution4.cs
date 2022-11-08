@@ -6,19 +6,24 @@ using System.Threading.Tasks;
 
 namespace leetcode._217_contains_duplicate
 {
-    public class Solution1
+    public class Solution4
     {
         public bool ContainsDuplicate(int[] nums)
-        {       
-            HashSet<int> numbers = new HashSet<int>();
-            for (int i = 0; i < nums.Length; i++)
+        {
+            var arrayWithUniqueNumbers = new Dictionary<int, int>();
+
+            foreach (var item in nums)
             {
-                if (numbers.Contains(nums[i]))
+                if (arrayWithUniqueNumbers.TryAdd(item, item))
+                {
+                    continue;
+                }
+                else
                 {
                     return true;
                 }
-                numbers.Add(nums[i]);
             }
+
             return false;
         }
     }
