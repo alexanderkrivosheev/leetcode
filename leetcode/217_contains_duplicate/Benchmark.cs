@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using leetcode.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,22 +16,9 @@ namespace leetcode._217_contains_duplicate
 
         static Benchmark()
         {
-            _data = GenerateArray(10000);
+            _data = Utils.GenerateArray(1000000);
         }
         
-        static int[] GenerateArray(int max)
-        {
-            int[] result = new int[max];
-            Random random = new Random();
-            for (int i = 0; i < max; i++)
-            {
-                result[i] = random.Next();
-            }
-
-            return result;
-        }
-
-
         [Benchmark]
         public void Solution1()
         {

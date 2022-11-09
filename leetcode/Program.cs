@@ -2,4 +2,4 @@
 using BenchmarkDotNet.Running;
 
 Console.WriteLine("Hello, World!");
-BenchmarkRunner.Run<leetcode._217_contains_duplicate.Benchmark>();
+BenchmarkRunner.Run<leetcode.ToArrayOrToList.Benchmark>();
