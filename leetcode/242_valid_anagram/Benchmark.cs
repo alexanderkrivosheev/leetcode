@@ -27,8 +27,15 @@ namespace leetcode._242_valid_anagram
         [Benchmark]
         public void Solution3()
         {
-            Solution1 solution = new Solution1();
-            solution.IsAnagram("aaabbbbcccaaabbbbcccaaabbbbcccaaabbbbcccaaabbbbcccaaabbbbccc", "cbabcababccbabcababccbabcababccbabcababccbabcababccbabcababc");
+            Solution3 solution = new Solution3();
+            solution.IsAnagram("aaabbbbccc", "cbabcababc");
         }
+
+        //[Benchmark]
+        //public void Solution4()
+        //{
+        //    Solution1 solution = new Solution1();
+        //    solution.IsAnagram("aaabbbbcccaaabbbbcccaaabbbbcccaaabbbbcccaaabbbbcccaaabbbbccc", "cbabcababccbabcababccbabcababccbabcababccbabcababccbabcababc");
+        //}
     }
 }
