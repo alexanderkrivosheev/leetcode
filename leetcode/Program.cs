@@ -2,4 +2,4 @@
 using BenchmarkDotNet.Running;
 
 Console.WriteLine("Hello, World!");
-BenchmarkRunner.Run<leetcode._1_two_sum.Benchmark>();
+BenchmarkRunner.Run<leetcode._49_Group_Anagrams.Benchmark>();
