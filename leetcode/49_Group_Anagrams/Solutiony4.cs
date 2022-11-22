@@ -38,13 +38,14 @@ namespace leetcode._49_Group_Anagrams
                 vector[s - 'a'] += 1;
             }
 
-            StringBuilder builder = new StringBuilder();
-            foreach (var item in vector)
-            {
-                builder.Append(item);
-            }
+            return new string(vector.Select(x => (char)x).ToArray());
+            //StringBuilder builder = new StringBuilder();
+            //foreach (var item in vector)
+            //{
+            //    builder.Append(item);
+            //}
 
-            return builder.ToString();
+            //return builder.ToString();
         }
     }
 }
