@@ -2,4 +2,4 @@
 using BenchmarkDotNet.Running;
 
 Console.WriteLine("Hello, World!");
-BenchmarkRunner.Run<leetcode.even_numbers.Benchmark>();
+BenchmarkRunner.Run<leetcode._36_valid_sudoku.Benchmark>();
