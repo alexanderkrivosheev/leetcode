@@ -2,4 +2,4 @@
 using BenchmarkDotNet.Running;
 
 Console.WriteLine("Hello, World!");
-BenchmarkRunner.Run<leetcode._36_valid_sudoku.Benchmark>();
+BenchmarkRunner.Run<leetcode._128_longest_consecutive_sequence.Benchmark>();
