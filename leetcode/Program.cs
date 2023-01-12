@@ -2,5 +2,5 @@
 using BenchmarkDotNet.Running;
 
 Console.WriteLine("Hello, World!");
-BenchmarkRunner.Run<leetcode._560_subarray_sum_equals_k.Benchmark>();
+BenchmarkRunner.Run<leetcode._125_valid_palindrome.Benchmark>();
 Console.WriteLine("Done!");
