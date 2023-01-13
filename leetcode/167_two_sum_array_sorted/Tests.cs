@@ -1,0 +1,20 @@
+﻿using FluentAssertions;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xunit;
+
+namespace leetcode._167_two_sum_array_sorted
+{
+    public static class Tests
+    {
+        [Fact]
+        public static void Solution_Case_1()
+        {
+                   
+        }      
+    }
+}
+  
