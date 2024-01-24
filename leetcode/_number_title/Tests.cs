@@ -8,10 +8,10 @@ using Xunit;
 
 namespace leetcode._number_title_template
 {
-    public static class Tests
+    public static class Tests2
     {
         [Fact]
-        public static void Solution_Case_1()
+        public static void Solution_Case_12()
         {
                    
         }      
