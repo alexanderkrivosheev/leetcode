@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace leetcode._find_minimum_array
+namespace leetcode._search_rotated_array
 {
     public static class Tests
     {
@@ -15,14 +15,14 @@ namespace leetcode._find_minimum_array
         //[InlineData(new int[] { 11, 13, 15, 17 }, 11)]
 
         //[InlineData(new int[] { 3, 4, 5, 1, 2 }, 1)]
-        [InlineData(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 0)]
+        [InlineData(new int[] { 5, 1, 3 }, 5, 0)]
 
         //[InlineData(new int[] { 17, 15, 13, 11 }, 11)]
-        public static void Solution_Case_1(int[] s,int expeted)
+        public static void Solution_Case_1(int[] s, int target, int expected)
         {
-            Solution2 solution = new Solution2();
-            var result = solution.FindMin(s);
-            Assert.Equal(expeted, result);
+            var solution = new Solution1();
+            var result = solution.Search(s, target);
+            Assert.Equal(expected, result);
         }
 
     }

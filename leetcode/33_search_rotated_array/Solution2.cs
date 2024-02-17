@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace leetcode._find_minimum_array
+namespace leetcode._search_rotated_array
 {
     public class Solution2
    {
