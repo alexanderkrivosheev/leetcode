@@ -16,15 +16,15 @@ namespace leetcode._205_reverse_linked_list
         [InlineData(1)]
         public static void Solution_Case_1(int l)
         {
-            ListNode head = new ListNode() { Val = 1 };
+            ListNode head = new ListNode() { val = 1 };
             var node = head;
 
-            head.Next = new ListNode() { Val = 2 };
-            node = head.Next;
+            head.next = new ListNode() { val = 2 };
+            node = head.next;
 
-            node.Next = new ListNode() { Val = 3 };
-            node = node.Next;
-            node.Next = new ListNode() { Val = 4 };
+            node.next = new ListNode() { val = 3 };
+            node = node.next;
+            node.next = new ListNode() { val = 4 };
             
             var solution = new Solution2();
             var result = solution.ReverseList(head);

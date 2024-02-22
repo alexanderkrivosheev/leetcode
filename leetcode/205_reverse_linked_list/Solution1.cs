@@ -15,9 +15,9 @@ namespace leetcode._205_reverse_linked_list
             {
                 current = next;
 
-                next = current.Next;
+                next = current.next;
 
-                current.Next = prev;
+                current.next = prev;
 
                 prev = current;
             };

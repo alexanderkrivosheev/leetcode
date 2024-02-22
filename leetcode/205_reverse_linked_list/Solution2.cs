@@ -16,8 +16,8 @@ namespace leetcode._205_reverse_linked_list
 
         public ListNode ReverseList(ListNode prev, ListNode current)
         {
-            ListNode nextNode = current.Next;
-            current.Next = prev;
+            ListNode nextNode = current.next;
+            current.next = prev;
 
             if (nextNode != null)
             {
