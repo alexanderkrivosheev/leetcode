@@ -2,5 +2,5 @@
 using BenchmarkDotNet.Running;
 
 Console.WriteLine("Hello, World!");
-BenchmarkRunner.Run<leetcode._167_two_sum_array_sorted.Benchmark>();
+BenchmarkRunner.Run<leetcode.trees._serialize_and_deserialize.Benchmark>();
 Console.WriteLine("Done!");
