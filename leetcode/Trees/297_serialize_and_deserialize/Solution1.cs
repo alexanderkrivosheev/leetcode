@@ -8,29 +8,22 @@
             Queue<TreeNode> nextNodes = new Queue<TreeNode>();
             nextNodes.Enqueue(root);
          
-            bool emptyLevel = false;
-       
+ 
             while (nextNodes.Count() > 0)
             {
                 Queue<TreeNode> childNodes = nextNodes;
                 nextNodes = new Queue<TreeNode>();
-                emptyLevel = true;
+
                 foreach (var node in childNodes)
                 {
                     result.Add($"{(node?.val.ToString() ?? "null")}");
 
                     if (node != null)
                     {
-                        if((node.left != null) || (node.right != null)){
-                            emptyLevel = false;
-                        }
-                       
                         nextNodes.Enqueue(node.left);
                         nextNodes.Enqueue(node.right);
                     }
                 }
-
-                if (emptyLevel) { break; }
             }
 
             return string.Join(",", result);
