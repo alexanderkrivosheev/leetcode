@@ -49,7 +49,7 @@ namespace leetcode.Heap
         {
             if(SmallHeap.Count == LargeHeap.Count)
             {
-                return (a + b) /2.0;
+                return (SmallHeap.Peek() + LargeHeap.Peek()) / 2.0;
             }
 
             if (SmallHeap.Count > LargeHeap.Count)
